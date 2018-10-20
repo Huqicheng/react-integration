@@ -3,7 +3,6 @@ import {mount} from 'enzyme';
 import Root from 'Root';
 import App from 'App';
 import moxios from 'moxios';
-import { doesNotThrow } from 'assert';
 
 beforeEach(() => {
     moxios.install();
