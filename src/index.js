@@ -4,10 +4,14 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import Root from 'Root';
-
+import {BrowserRouter, Route} from 'react-router-dom';
 
 ReactDOM.render(
-        <Root initialState={{}}><App /></Root>, 
+        <Root initialState={{}}>
+                <BrowserRouter>
+                        <Route path="/" component={App} />
+                </BrowserRouter>
+        </Root>, 
         document.getElementById('root')
 );
 
